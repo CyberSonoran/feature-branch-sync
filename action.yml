@@ -5,6 +5,14 @@ inputs:
     description: 'Name of default branch'
     required: true
     default: 'main'
+  branches-to-exclude:  # id of input
+    description: 'Branches to ignore while syncing, comma-separated'
+    required: false
+    default: ''
+  slack-notifications:  # id of input
+    description: 'Include a Slack channel webhook URL, or leave blank to disable the feature'
+    required: false
+    default: ''
 outputs:
   random-number:
     description: "Random number"
